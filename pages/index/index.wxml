@@ -1,0 +1,4 @@
+<view>游戏全家桶</view>
+<image bindtap="clickMe"src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543986980710&di=46b7ee29c7f2f53b0796270ee36feadd&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fforum%2Fw%3D580%2Fsign%3D84933e38347adab43dd01b4bbbd5b36b%2Fc298e9224f4a20a43aa9b1d792529822730ed0fe.jpg'></image>
+<navigator url='../heroList/heroList'><button>英雄联盟</button></navigator>
+<navigator url='../shishen/shishen'><button>阴阳师</button></navigator>

@@ -1,0 +1,25 @@
+/* pages/shishen/shishen.wxss */
+page{
+  background-color: #e8e4d9;
+}
+.title {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#shishenList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shishen {
+  height: 150px;
+  width: 120px;
+  text-align: center;
+  margin: 2px;
+}
+
+image {
+  width: 100%;
+  height: 120px;
+}

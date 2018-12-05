@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/shishen/shishen",
+    "pages/logs/logs",
+    "pages/heroList/heroList",
+    "pages/heroDetail/heroDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fcf022",
+    "navigationBarTitleText": "jsは世界で一番いい言葉です",
+    "navigationBarTextStyle": "black"
+  }
+}

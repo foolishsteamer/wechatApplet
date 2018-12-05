@@ -1,0 +1,11 @@
+/**index.wxss**/
+view{
+  text-align: center;
+}
+image{
+  width: 100%;
+}
+navigator{
+  text-align: center;
+  margin-top: 10px;
+}

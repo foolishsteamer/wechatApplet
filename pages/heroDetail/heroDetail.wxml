@@ -1,0 +1,22 @@
+<!--pages/heroDetail/heroDetail.wxml-->
+<swiper indicator-dots indicator-color="#fff" indicator-active-color="#00b26a" autoplay interval='3000' duration='800'>
+  <swiper-item wx:for="{{heroInfo.bgs}}">
+    <image  class="skin" src="{{item}}"></image>
+  </swiper-item>
+</swiper>
+<view id='info'>
+  <view class='flex-left'>
+    <view class='name'>{{heroInfo.name}}</view>
+    <view class='title'>{{heroInfo.title}}</view>
+    <view class='tags'>{{heroInfo.tags}}</view>
+    <view class='life'>生存能力</view>
+    <progress color='#9acd32' stroke-width="20px" percent="{{heroInfo.Ability.life}}"></progress>
+    <view class='physical'>物理攻击</view>
+    <progress color='#7e9353' stroke-width="20px" percent="{{heroInfo.Ability.physical}}"></progress>
+    <view class='magic'>魔法攻击</view>
+    <progress color='#668822' stroke-width="20px" percent="{{heroInfo.Ability.magic}}"></progress>
+    <view class='difficulty'>操作难度</view>
+    <progress color='#b2d768' stroke-width="20px" percent="{{heroInfo.Ability.difficulty}}"></progress>
+  </view>
+  <view class='flex-right'>{{heroInfo.story}}</view>
+</view>

@@ -1,0 +1,17 @@
+/* pages/hero/hero.wxss */
+#heroList{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 6px;
+}
+.hero{
+  width: 120px;
+  height: 140px;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.hero image{
+  width: 100px;
+  height: 100px;
+}
