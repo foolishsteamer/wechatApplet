@@ -4,7 +4,8 @@
     "pages/shishen/shishen",
     "pages/logs/logs",
     "pages/heroList/heroList",
-    "pages/heroDetail/heroDetail"
+    "pages/heroDetail/heroDetail",
+    "pages/movie/movie"
   ],
   "window": {
     "backgroundTextStyle": "light",

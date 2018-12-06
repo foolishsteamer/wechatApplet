@@ -2,16 +2,16 @@
 #heroList{
   display: flex;
   flex-wrap: wrap;
-  padding: 6px;
+  padding: 12rpx;
 }
 .hero{
-  width: 120px;
-  height: 140px;
-  padding: 10px;
+  width: 240rpx;
+  height: 280rpx;
+  padding: 20rpx;
   box-sizing: border-box;
   text-align: center;
 }
 .hero image{
-  width: 100px;
-  height: 100px;
+  width: 200rpx;
+  height: 200rpx;
 }

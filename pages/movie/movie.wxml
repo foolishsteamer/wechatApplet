@@ -1,0 +1,100 @@
+<!-- pages/movie/movie.wxml -->
+<view class='nav'>
+    <view class="left">
+        <text>豆瓣</text>
+    </view>
+    <view class="right">
+        <text>电影</text>
+        <text>图书</text>
+        <text>广播</text>
+        <text>小组</text>
+        <icon type="search" size="15" color="#00b600"></icon>
+    </view>
+</view>
+<!-- 影院热映 -->
+<view class="section">
+    <view class="title">
+        <text>影院热映</text>
+        <navigator>更多</navigator>
+    </view>
+    <!-- 内容区域 -->
+    <scroll-view scroll-x>
+        <view class='item' wx:for="{{hotMovies}}">
+            <navigator>
+                <image src='{{item.images.small}}'></image>
+            </navigator>
+            <text>{{item.title}}</text>
+            <view class="star-box">
+                <image wx:if="{{item.rating.stars>=10}}" src="/img/star.png"></image>
+                <image wx:else src="/img/empty.png"></image>
+                <image wx:if="{{item.rating.stars>=20}}" src="/img/star.png"></image>
+                <image wx:else src="/img/empty.png"></image>
+                <image wx:if="{{item.rating.stars>=30}}" src="/img/star.png"></image>
+                <image wx:else src="/img/empty.png"></image>
+                <image wx:if="{{item.rating.stars>=40}}" src="/img/star.png"></image>
+                <image wx:else src="/img/empty.png"></image>
+                <image wx:if="{{item.rating.stars>=50}}" src="/img/star.png"></image>
+                <image wx:else src="/img/empty.png"></image>
+                <text class="score">{{item.rating.average}}</text>
+            </view>
+        </view>
+    </scroll-view>
+</view>
+<!-- 即将上映 -->
+<view class="section">
+    <view class="title">
+        <text>即将上映</text>
+        <navigator>更多</navigator>
+    </view>
+    <!-- 内容区域 -->
+    <scroll-view scroll-x>
+        <view class='item' wx:for="{{comingMovies}}">
+            <navigator>
+                <image src='{{item.images.small}}'></image>
+            </navigator>
+            <text>{{item.title}}</text>
+            <view class="star-box">
+                <image wx:if="{{item.rating.stars>=10}}" src="/images/star.png"></image>
+                <image wx:else src="/images/empty.png"></image>
+                <image wx:if="{{item.rating.stars>=20}}" src="/images/star.png"></image>
+                <image wx:else src="/images/empty.png"></image>
+                <image wx:if="{{item.rating.stars>=30}}" src="/images/star.png"></image>
+                <image wx:else src="/images/empty.png"></image>
+                <image wx:if="{{item.rating.stars>=40}}" src="/images/star.png"></image>
+                <image wx:else src="/images/empty.png"></image>
+                <image wx:if="{{item.rating.stars>=50}}" src="/images/star.png"></image>
+                <image wx:else src="/images/empty.png"></image>
+                <text class="score">{{item.rating.average}}</text>
+            </view>
+        </view>
+    </scroll-view>
+</view>
+<!-- top250 -->
+<view class="section">
+    <view class="title">
+        <text>top250</text>
+        <navigator>更多</navigator>
+    </view>
+    <!-- 内容区域 -->
+    <scroll-view scroll-x>
+        <view class='item' wx:for="{{topMovies}}">
+            <navigator>
+                <image src='{{item.images.small}}'></image>
+            </navigator>
+            <text>{{item.title}}</text>
+            <view class="star-box">
+                <image wx:if="{{item.rating.stars>=10}}" src="/img/star.png"></image>
+                <image wx:else src="/img/empty.png"></image>
+                <image wx:if="{{item.rating.stars>=20}}" src="/img/star.png"></image>
+                <image wx:else src="/img/empty.png"></image>
+                <image wx:if="{{item.rating.stars>=30}}" src="/img/star.png"></image>
+                <image wx:else src="/img/empty.png"></image>
+                <image wx:if="{{item.rating.stars>=40}}" src="/img/star.png"></image>
+                <image wx:else src="/img/empty.png"></image>
+                <image wx:if="{{item.rating.stars>=50}}" src="/img/star.png"></image>
+                <image wx:else src="/img/empty.png"></image>
+                <text class="score">{{item.rating.average}}</text>
+            </view>
+        </view>
+    </scroll-view>
+</view>

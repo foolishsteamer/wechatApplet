@@ -1,11 +1,24 @@
 /**index.wxss**/
-view{
+#weather{
+  background-color: yellowgreen;
+}
+.title{
+  display: block;
   text-align: center;
+}
+.weatherDetail{
+  font-size:34rpx;
+}
+.city{
+  background-color: #fff;
 }
 image{
   width: 100%;
 }
+swiper{
+  height: 480rpx;
+}
 navigator{
   text-align: center;
-  margin-top: 10px;
+  margin-top: 10rpx;
 }

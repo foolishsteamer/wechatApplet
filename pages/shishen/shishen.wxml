@@ -2,7 +2,7 @@
 <view class='title'>式神全家桶</view>
 <view id='shishenList'>
   <view class='shishen' wx:for='{{shishen}}'>
-    <image src='../../img/{{item.key}}.png'></image>
+    <image src='../../img/shishen/{{item.key}}.png'></image>
     {{item.name}}
   </view>
 </view>
