@@ -1,0 +1,16 @@
+<template name="nav">
+    <view class="nav">
+        <view class="left">
+            <text>豆瓣</text>
+        </view>
+        <view class="right">
+            <text>电影</text>
+            <text>图书</text>
+            <text>广播</text>
+            <text>小组</text>
+        </view>
+        <navigator url="/pages/movieSearch/movieSearch">
+            <icon type="search" size="15" color="#00b600"></icon>
+        </navigator>
+    </view>
+</template>

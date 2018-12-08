@@ -1,0 +1,36 @@
+<!--pages/movieSearch/movieSearch.wxml-->
+<view class="search-box">
+    <text>关闭</text>
+    <icon type="search" size="15"></icon>
+    <input bindconfirm="search" type="text" />
+</view>
+<!-- 列表 -->
+<view class="list-box" wx:if="{{results.length==0}}">
+    <view class="item" wx:for="{{list}}">
+        <text class="title" style="color:{{item.color}}">{{item.title}}</text>
+        <text class='sub-title'>{{item.subTitle}}</text>
+    </view>
+</view>
+<view class="result-box" wx:else>
+    <navigator wx:for="{{results}}" url="/pages/movieDetail/movieDetail?id={{item.id}}" class="result-item">
+        <view class="left">
+            <image src="{{item.images.small}}"></image>
+        </view>
+        <view class="right">
+            <view class="title">{{item.title}}</view>
+            <view class="star-box">
+                <image wx:if="{{item.rating.stars>=10}}" src="/images/star.png"></image>
+                <image wx:else src="/images/empty.png"></image>
+                <image wx:if="{{item.rating.stars>=20}}" src="/images/star.png"></image>
+                <image wx:else src="/images/empty.png"></image>
+                <image wx:if="{{item.rating.stars>=30}}" src="/images/star.png"></image>
+                <image wx:else src="/images/empty.png"></image>
+                <image wx:if="{{item.rating.stars>=40}}" src="/images/star.png"></image>
+                <image wx:else src="/images/empty.png"></image>
+                <image wx:if="{{item.rating.stars>=50}}" src="/images/star.png"></image>
+                <image wx:else src="/images/empty.png"></image>
+                <text>{{item.rating.average}}</text>
+            </view>
+        </view>
+    </navigator>
+</view>

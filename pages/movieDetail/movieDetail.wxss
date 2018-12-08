@@ -1,0 +1,105 @@
+/* pages/movieDetail/movieDetail.wxss */
+/* 粗略信息区域布局 */
+page{
+    padding-left:30rpx ;
+    padding-right:30rpx ;
+    box-sizing: border-box;
+}
+.title{
+    padding-top: 60rpx;
+    font-size:50rpx;
+}
+.info-box{
+    display: flex;
+}
+.info-box .left{
+    flex:1;
+}
+.info-box .left .top{
+    font-size:26rpx;
+    margin-top: 20rpx;
+    display: flex;
+}
+.info-box .left .top .star-box{
+    margin-right: 10rpx;
+}
+.info-box .left .top .star-box image{
+    width: 30rpx;
+    height: 30rpx;
+}
+.info-box .left .top .score{
+    margin-right: 15rpx;
+}
+.info-box .left .top .comments{
+    color:#ccc;
+}
+.info-box .left .bottom{
+    margin-top:40rpx ;
+    font-size:26rpx;
+}
+.info-box .right{}
+.info-box .right image{
+    display: block;
+    width: 200rpx;
+    height: 280rpx;
+    margin-left: 50rpx;
+}
+
+/* 想看 */
+.look-box{
+    padding: 80rpx 0 60rpx;
+    display: flex;
+    justify-content: space-between;
+}
+.look-box navigator{
+    width: 320rpx;
+    height: 60rpx;
+    border: 1rpx solid #ffb712;
+    border-radius: 4rpx;
+    text-align: center;
+    line-height: 60rpx;
+    font-size:32rpx;
+    color:#ffb712;
+}
+
+
+/* 频道 */
+.channel-box{
+
+}
+.channel-box .title{
+    font-size:32rpx;
+    padding-top: 0;
+    color:#ccc;
+}
+.channel-box .items{
+    margin-top: 32rpx;
+    display: flex;
+    flex-wrap: wrap;
+}
+.channel-box .items navigator{
+    margin-bottom: 20rpx;
+    color:#42bd56;
+    border: 1rpx solid #42bd56;
+    height: 56rpx;
+    padding: 0 20rpx;
+    border-radius: 28rpx;
+    background-color: #effaf0;
+    text-align: center;
+    line-height: 56rpx;
+    font-size:30rpx;
+    margin-right: 20rpx;
+}
+
+/* 剧情简介 */
+.movie-summary{
+    margin-top: 60rpx;
+}
+.movie-summary .summary-title{
+    font-size:32rpx;
+    color:#ccc;
+}
+.movie-summary .text{
+    padding-top: 36rpx;
+    font-size:34rpx;
+}

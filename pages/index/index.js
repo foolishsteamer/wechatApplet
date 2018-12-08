@@ -10,7 +10,7 @@ Page({
   },
   searchWeather(e){
     wx.request({
-      url: `http://wthrcdn.etouch.cn/weather_mini?city=${ e?e.detail.value : this.data.city}`, //开发者服务器接口地址",
+      url: `https://wthrcdn.etouch.cn/weather_mini?city=${ e?e.detail.value : this.data.city}`, //开发者服务器接口地址",
       method: 'GET',
       success: res => {
         this.setData({
@@ -24,7 +24,7 @@ Page({
    */
   onLoad: function(options) {
     wx.request({
-      url: `http://wthrcdn.etouch.cn/weather_mini?city=深圳`, //开发者服务器接口地址",
+      url: `https://wthrcdn.etouch.cn/weather_mini?city=深圳`, //开发者服务器接口地址",
       method: 'GET',
       success: res => {
         this.setData({

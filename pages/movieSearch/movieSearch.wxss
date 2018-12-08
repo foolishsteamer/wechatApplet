@@ -1,0 +1,82 @@
+/* pages/movieSearch/movieSearch.wxss */
+page{
+    padding-top: 0;
+}
+
+/* 顶部的搜索盒子 */
+.search-box{
+    height: 120rpx;
+    display: flex;
+    align-items: center;
+    padding: 0 30rpx;
+    justify-content: space-between;
+    border-bottom: 1rpx solid lightgray;
+    box-sizing: border-box;
+    position: relative;
+}
+.search-box text{
+    color:#42bd56;
+    font-size:24rpx;
+    margin-right: 20rpx;
+}
+.search-box icon{
+    position: absolute;
+    left: 400rpx;
+}
+.search-box input{
+    flex:1;
+    height: 60rpx;
+    background-color: lightgray;
+    border-radius: 4rpx;
+
+}
+/* 列表区域 */
+.list-box{}
+.list-box .item{
+    width: 33.3333%;
+    text-align: center;
+    margin-right: 0;
+}
+.list-box .item .title{
+    font-size:50rpx;
+}
+.list-box .item .sub-title{
+    font-size:22rpx;
+    color:#ccc;
+    margin: 0;
+}
+
+/* 结果盒子 */
+.result-box{
+    padding: 0 30rpx;
+}
+.result-box navigator{
+    display: block;
+    border-bottom: 1rpx solid #42bd56;
+    display: flex;
+}
+.result-box navigator .left{}
+.result-box navigator .left image{
+    display: block;
+    width: 80rpx;
+    height: 110rpx;
+    margin: 16rpx;
+}
+.result-box navigator .right{
+    flex:1;
+} 
+.result-box navigator .right .title{
+    padding-top: 20rpx;
+    font-size:28rpx;
+}
+.result-box navigator .right .star-box{
+    display: flex;
+}
+.result-box navigator .right .star-box image{
+    width: 16rpx;
+    height: 16rpx;
+}
+.result-box navigator .right .star-box text{
+    font-size:14rpx;
+    color:#ccc;
+}

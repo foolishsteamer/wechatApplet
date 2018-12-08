@@ -5,7 +5,10 @@
     "pages/logs/logs",
     "pages/heroList/heroList",
     "pages/heroDetail/heroDetail",
-    "pages/movie/movie"
+    "pages/movie/movie",
+    "pages/more/more",
+    "pages/movieSearch/movieSearch",
+    "pages/movieDetail/movieDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",

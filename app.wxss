@@ -7,4 +7,130 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}
+
+
+.nav-item {
+  width: 100px;
+  height: 120px;
+}
+
+.nav-item image {
+  width: 100%;
+  height: 100px;
+}
+
+.nav-item text {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* 抽取 导航栏的样式 因为多个页面都需要使用 */
+/* 使用padding 把内容下压 */
+page{
+  padding-top: 90rpx;
+}
+/* 顶部的导航栏 */
+.nav {
+  height: 90rpx;
+  border-bottom: 1rpx solid gray;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40rpx;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  /* 使用怪异盒模型 去除 超出的尺寸 */
+  box-sizing: border-box;
+}
+
+.nav .left {}
+
+.nav .left text {
+  font-size: 40rpx;
+  color: #05b512;
+  font-weight: 700;
+}
+
+.nav .right {
+  display: flex;
+}
+
+.nav .right text {
+  font-size: 30rpx;
+  margin-right: 35rpx;
+}
+
+.nav .right text:nth-child(1) {
+  color: #2384e8;
+}
+
+.nav .right text:nth-child(2) {
+  color: #a5806a;
+}
+
+.nav .right text:nth-child(3) {
+  color: #e4a813;
+}
+
+.nav .right text:nth-child(4) {
+  color: #2ab8cc;
+
+}
+
+.nav .right icon {
+  transform: translateY(3rpx)
+}
+
+
+.item {
+  width: 200rpx;
+  /* height: 300rpx; */
+  margin-right: 20rpx;
+  /* background-color: hotpink; */
+  /* 子元素变为inline-block */
+  display: inline-block;
+}
+
+.item navigator {
+  display: block;
+}
+
+.item navigator image {
+  display: block;
+  width: 100%;
+  height: 284rpx;
+}
+
+.item text {
+  text-align: center;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.item view.star-box {
+  margin-top: 14rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item view.star-box image {
+  width: 20rpx;
+  height: 20rpx;
+}
+
+.item view.star-box .score {
+  color: hotpink;
+  font-size: 22rpx;
+  margin-top: 0;
+}

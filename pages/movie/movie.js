@@ -1,4 +1,5 @@
 // pages/movie/movie.js
+import axios from '../../utils/util'
 Page({
 
   /**
@@ -21,6 +22,7 @@ Page({
         "content-type": "json"
       },
       success:res=>{
+        console.log(res.data)
         this.setData({
           hotMovies:res.data.subjects
         })
@@ -50,6 +52,22 @@ Page({
         })
       }
     })
+    // let a1 = axios({
+    //   url: 'https://douban.uieee.com/v2/movie/in_theaters?count=5'
+    // })
+    // let a1 = axios({
+    //   url: 'https://douban.uieee.com/v2/movie/coming_soon?count=5'
+    // })
+    // let a1 = axios({
+    //   url: 'https://douban.uieee.com/v2/movie/top250?count=5'
+    // })
+    // Promise.all([a1,a2,a3]).then(res=>{
+    //   this.setData({
+    //     hotMovies:res[0].data.subjects,
+    //     comingMovies:res[1].data.subjects,
+    //     topMovies:res[2].data.subjects
+    //   })
+    // })
   },
 
   /**

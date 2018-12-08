@@ -1,0 +1,27 @@
+<!--pages/more/more.wxml-->
+<!-- 导入导航栏 -->
+<import src="/template/nav.wxml" />
+<!-- 使用导入的导航栏 -->
+<template is="nav"></template>
+<view class="more-title">{{title}}</view>
+<view class="item-box">
+    <view class="item" wx:for='{{movieList}}'>
+        <navigator url="/pages/movieDetail/movieDetail?id={{item.id}}">
+            <image src="{{item.images.small}}"></image>
+        </navigator>
+        <text>{{item.title}}</text>
+        <view class="star-box">
+            <image wx:if="{{item.rating.stars>=10}}" src="../../img/star.png"></image>
+            <image wx:else src="../../img/empty.png"></image>
+            <image wx:if="{{item.rating.stars>=20}}" src="../../img/star.png"></image>
+            <image wx:else src="../../img/empty.png"></image>
+            <image wx:if="{{item.rating.stars>=30}}" src="../../img/star.png"></image>
+            <image wx:else src="../../img/empty.png"></image>
+            <image wx:if="{{item.rating.stars>=40}}" src="../../img/star.png"></image>
+            <image wx:else src="../../img/empty.png"></image>
+            <image wx:if="{{item.rating.stars>=50}}" src="../../img/star.png"></image>
+            <image wx:else src="../../img/empty.png"></image>
+            <text class="score">{{item.rating.average}}</text>
+        </view>
+    </view>
+</view>
