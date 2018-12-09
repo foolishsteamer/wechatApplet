@@ -19,16 +19,16 @@
         <view class="right">
             <view class="title">{{item.title}}</view>
             <view class="star-box">
-                <image wx:if="{{item.rating.stars>=10}}" src="/images/star.png"></image>
-                <image wx:else src="/images/empty.png"></image>
-                <image wx:if="{{item.rating.stars>=20}}" src="/images/star.png"></image>
-                <image wx:else src="/images/empty.png"></image>
-                <image wx:if="{{item.rating.stars>=30}}" src="/images/star.png"></image>
-                <image wx:else src="/images/empty.png"></image>
-                <image wx:if="{{item.rating.stars>=40}}" src="/images/star.png"></image>
-                <image wx:else src="/images/empty.png"></image>
-                <image wx:if="{{item.rating.stars>=50}}" src="/images/star.png"></image>
-                <image wx:else src="/images/empty.png"></image>
+                <image wx:if="{{item.rating.stars>=10}}" src="/img/star.png"></image>
+                <image wx:else src="/img/empty.png"></image>
+                <image wx:if="{{item.rating.stars>=20}}" src="/img/star.png"></image>
+                <image wx:else src="/img/empty.png"></image>
+                <image wx:if="{{item.rating.stars>=30}}" src="/img/star.png"></image>
+                <image wx:else src="/img/empty.png"></image>
+                <image wx:if="{{item.rating.stars>=40}}" src="/img/star.png"></image>
+                <image wx:else src="/img/empty.png"></image>
+                <image wx:if="{{item.rating.stars>=50}}" src="/img/star.png"></image>
+                <image wx:else src="/img/empty.png"></image>
                 <text>{{item.rating.average}}</text>
             </view>
         </view>

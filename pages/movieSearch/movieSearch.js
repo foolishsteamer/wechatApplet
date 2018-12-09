@@ -79,7 +79,7 @@ Page({
 
     // 获取数据
     axios({
-      url: `https://douban.uieee.com/v2/movie/search?q=${searchKey}`
+      url: `https://autumnfish.cn/v2/movie/search?q=${searchKey}`
     }).then(res => {
       console.log(res);
       this.setData({

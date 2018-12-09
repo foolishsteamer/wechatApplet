@@ -18,22 +18,26 @@
 //   formatTime: formatTime
 // }
 
+// 使用es6的语法 暴露出去
 function axios(options){
+  // 返回一个promise对象
   return new Promise((resolve,reject)=>{
     wx.request({
-      url:options.url||'url',
-      data:options.data||'data',
+      // 短路运算
+      url:options.url||'url', //开发者服务器接口地址",
+      data:options.data||'data', //请求的参数",
       method:options.method||'GET',
-      dataType:options.dataType||'json',
-      header:options.header||{'content-type':'json'},
-      success:res=>{
-        resolve(res);
+      dataType:options.dataType||'json', //如果设为json，会尝试对返回的数据做一次 JSON.parse
+      header:options.header||{"content-type": "json"},
+      success: res => {
+        resolve(res)
+      }, 
+      fail: () => {
+        reject('失败啦!')
       },
-      fail:()=>{
-        reject('false');
-      },
-      complete:()=>{}
+      complete: () => {}
     });
   })
-}
+}  
+
 export default axios;
